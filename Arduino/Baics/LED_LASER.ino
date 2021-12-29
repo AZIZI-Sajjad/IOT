@@ -23,16 +23,23 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  // LED
-  digitalWrite(ledPin, HIGH);
+  // LED & LASER At the same time 
+  digitalWrite(ledPin, HIGH); digitalWrite(laserPin, HIGH);
   delay(ledDelayOn);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(ledPin, LOW); digitalWrite(laserPin, LOW);
   delay(ledDelayOff);
 
-
+/*
+  // First LED then LASER 
+  // LED
+  digitalWrite(ledPin, HIGH); digitalWrite(laserPin, HIGH);
+  delay(ledDelayOn);
+  digitalWrite(ledPin, LOW); 
+  delay(ledDelayOff);
   // LASER 
    digitalWrite(laserPin, HIGH);
    delay(laserDelayOn);
-   digitalWrite(laserDelayOff, LOW);
-   delay(10);
+   digitalWrite(laserPin, LOW);
+   delay(laserDelayOff);
+*/
 }  
