@@ -73,3 +73,18 @@ void loop() {
    delay(laserDelayOff);
 */
 }  
+
+
+///////////////////////////////////////////////// ERROR :
+
+/*
+Le croquis utilise 8508 octets (3%) de l'espace de stockage de programmes. Le maximum est de 253952 octets.
+Les variables globales utilisent 195 octets (2%) de mémoire dynamique, ce qui laisse 7997 octets pour les variables locales. Le maximum est de 8192 octets.
+avrdude: verification error, first mismatch at byte 0x096c
+         0x8e != 0xce
+avrdude: verification error; content mismatch
+avrdude: verification error; content mismatch
+
+
+
+*/
