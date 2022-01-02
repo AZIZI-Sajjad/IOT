@@ -1,90 +1,49 @@
-#include <Ethernet.h>
-
-// SDA's First Ardiuno Project !!!! ;)
-
-// ETHERNET
-// Enter a MAC address and IP address for your controller below.
-// The IP address will be dependent on your local network:
-//#include <SPI.h>
-#include <Ethernet.h>
-
-// Enter a MAC address and IP address for your controller below.
-// The IP address will be dependent on your local network:
-byte mac[] = {
-  0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
-};
-IPAddress ip(192, 168, 2, 123);
-
-// Initialize the Ethernet server library
-// with the IP address and port you want to use
-// (port 80 is default for HTTP):
-EthernetServer server(80);
-// ETHERNET
+#include <EtherCard.h>
+#define SS 10 // Slave Select Pin Nummer
+uint8_t Ethernet::buffer[700]; // Packet Buffer Greetings is 512 Byte
 
 
+// The Hardware MAC address is defined here..
+byte mymac[] = { 0x74, 0x69, 0x69, 0x2D, 0x30, 0x31 };
 
-// GENERAL
-int DelayOn = 2000;
-int DelayOff = 1000;
-
-
-// LASER
-int laserPin = 10;
-int laserDelayOn = 2000;
-int laserDelayOff = 1000;
-
-// LED
-int ledPin = 12;
-int ledDelayOn = 2000;
-int ledDelayOff = 1000;
+static BufferFiller bfill; // used as cursor while filling the buffer
 
 void setup() {
-  // put your setup code here, to run once:
-
-
-  
-  // LED
-  pinMode(ledPin, OUTPUT);
-  // LASER 
-  pinMode (laserPin,OUTPUT);
-  
-
+  Serial.begin(9600); // Open serial cutting atlas
+  while(!Serial) { /* Wait for serial port */ }
+  Serial.println("Waiting for EnC28J60 Startup.");
+  delay(6000);
+  Serial.println("Initialization of the Ethernet controller");
+  if(ether.begin(sizeof Ethernet::buffer, mymac, SS) == 0) {
+    Serial.println("Error: EnC28J60 not initialized.");
+    while(true);
+}
+  Serial.println("DHCP Address.");
+  if(ether.dhcpSetup()) {
+  ether.printIp("IP Adress: ", ether.myip);
+  ether.printIp("Netmask: ", ether.netmask);
+  ether.printIp("GW IP: ", ether.gwip);
+  ether.printIp("DNS IP: ", ether.dnsip);
+  }
+  else {
+  ether.printIp("Get DHCP address failed.");
+  while(true);
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  // LED & LASER At the same time 
-  digitalWrite(ledPin, HIGH); digitalWrite(laserPin, LOW);
-  delay(DelayOn);
-  digitalWrite(ledPin, LOW); digitalWrite(laserPin, HIGH);
-  delay(DelayOff);
-
-/*
-  // First LED then LASER 
-  // LED
-  digitalWrite(ledPin, HIGH); digitalWrite(laserPin, HIGH);
-  delay(ledDelayOn);
-  digitalWrite(ledPin, LOW); 
-  delay(ledDelayOff);
-  // LASER 
-   digitalWrite(laserPin, HIGH);
-   delay(laserDelayOn);
-   digitalWrite(laserPin, LOW);
-   delay(laserDelayOff);
-*/
-}  
-
-
-///////////////////////////////////////////////// ERROR :
-
-/*
-Le croquis utilise 8508 octets (3%) de l'espace de stockage de programmes. Le maximum est de 253952 octets.
-Les variables globales utilisent 195 octets (2%) de mémoire dynamique, ce qui laisse 7997 octets pour les variables locales. Le maximum est de 8192 octets.
-avrdude: verification error, first mismatch at byte 0x096c
-         0x8e != 0xce
-avrdude: verification error; content mismatch
-avrdude: verification error; content mismatch
-
-
-
-*/
+  word len = ether.packetReceive(); // Paket Listener
+  word pos = ether.packetLoop(len);
+  if(len) {
+    Serial.print("Receive IP Packet. Size:");
+    Serial.print(len);
+    Serial.print(" Bytes. Data Offset:");
+    Serial.print(pos);
+    Serial.println(" Bytes. IP data:");
+    for(int x = 0; x < len; x++) {
+      char StrC = Ethernet::buffer[x];
+      Serial.print(StrC);
+    }
+    Serial.println("");
+  }
+}
