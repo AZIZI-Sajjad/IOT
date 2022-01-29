@@ -1,4 +1,7 @@
 RFID-MFRC522-Arduino-Mega-2560-Wiring
+/!\
+VCC : 3.3 v
+/!\
 * Typical pin layout used:
 * -----------------------------------------------------------------------------------------
 *             MFRC522      Arduino       Arduino   Arduino    Arduino          Arduino
