@@ -1,0 +1,441 @@
+D:\CODE\Arduino\IOT>tree D:\CODE\Arduino\IOT
+Structure du dossier pour le volume DATA
+Le numéro de série du volume est 00000093 804E:60AB
+D:\CODE\ARDUINO\IOT
+├───Arduino
+│   └───Baics
+├───ENC28J60
+│   ├───ENC28J60 _Web_Serveur
+│   └───User Manuel +Wiring Arduino Mega 2560 + Librairie IDE
+├───ESP8266
+│   ├───Arduino-master
+│   │   ├───.github
+│   │   │   └───workflows
+│   │   ├───bootloaders
+│   │   │   └───eboot
+│   │   ├───cores
+│   │   │   └───esp8266
+│   │   │       ├───avr
+│   │   │       ├───libb64
+│   │   │       ├───spiffs
+│   │   │       └───umm_malloc
+│   │   │           └───dbglog
+│   │   ├───doc
+│   │   │   ├───eclipse
+│   │   │   ├───esp8266wifi
+│   │   │   │   └───pictures
+│   │   │   ├───faq
+│   │   │   │   └───pictures
+│   │   │   ├───ota_updates
+│   │   │   ├───Troubleshooting
+│   │   │   └───_static
+│   │   ├───libraries
+│   │   │   ├───ArduinoOTA
+│   │   │   │   └───examples
+│   │   │   │       ├───BasicOTA
+│   │   │   │       └───OTALeds
+│   │   │   ├───DNSServer
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───CaptivePortal
+│   │   │   │   │   ├───CaptivePortalAdvanced
+│   │   │   │   │   └───DNSServer
+│   │   │   │   └───src
+│   │   │   ├───EEPROM
+│   │   │   │   └───examples
+│   │   │   │       ├───eeprom_clear
+│   │   │   │       ├───eeprom_read
+│   │   │   │       └───eeprom_write
+│   │   │   ├───esp8266
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───Blink
+│   │   │   │   │   ├───BlinkPolledTimeout
+│   │   │   │   │   ├───BlinkWithoutDelay
+│   │   │   │   │   ├───CallBackList
+│   │   │   │   │   ├───CallSDKFunctions
+│   │   │   │   │   ├───CheckFlashConfig
+│   │   │   │   │   ├───CheckFlashCRC
+│   │   │   │   │   ├───ConfigFile
+│   │   │   │   │   ├───FadePolledTimeout
+│   │   │   │   │   ├───HeapMetric
+│   │   │   │   │   ├───HelloCrypto
+│   │   │   │   │   ├───HwdtStackDump
+│   │   │   │   │   ├───I2SInput
+│   │   │   │   │   ├───I2STransmit
+│   │   │   │   │   ├───interactive
+│   │   │   │   │   ├───irammem
+│   │   │   │   │   ├───IramReserve
+│   │   │   │   │   ├───LowPowerDemo
+│   │   │   │   │   ├───MMU48K
+│   │   │   │   │   ├───NTP-TZ-DST
+│   │   │   │   │   ├───RTCUserMemory
+│   │   │   │   │   ├───SerialDetectBaudrate
+│   │   │   │   │   ├───SerialStress
+│   │   │   │   │   ├───SigmaDeltaDemo
+│   │   │   │   │   ├───StreamString
+│   │   │   │   │   ├───TestEspApi
+│   │   │   │   │   ├───UartDownload
+│   │   │   │   │   └───virtualmem
+│   │   │   │   └───src
+│   │   │   ├───ESP8266AVRISP
+│   │   │   │   ├───examples
+│   │   │   │   │   └───Arduino_Wifi_AVRISP
+│   │   │   │   └───src
+│   │   │   ├───ESP8266HTTPClient
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───Authorization
+│   │   │   │   │   ├───BasicHttpClient
+│   │   │   │   │   ├───BasicHttpsClient
+│   │   │   │   │   ├───DigestAuthorization
+│   │   │   │   │   ├───PostHttpClient
+│   │   │   │   │   ├───ReuseConnectionV2
+│   │   │   │   │   ├───StreamHttpClient
+│   │   │   │   │   └───StreamHttpsClient
+│   │   │   │   └───src
+│   │   │   ├───ESP8266httpUpdate
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───httpUpdate
+│   │   │   │   │   ├───httpUpdateLittleFS
+│   │   │   │   │   ├───httpUpdateSecure
+│   │   │   │   │   └───httpUpdateSigned
+│   │   │   │   └───src
+│   │   │   ├───ESP8266HTTPUpdateServer
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───SecureBearSSLUpdater
+│   │   │   │   │   ├───SecureWebUpdater
+│   │   │   │   │   └───WebUpdater
+│   │   │   │   └───src
+│   │   │   ├───ESP8266LLMNR
+│   │   │   │   └───examples
+│   │   │   │       └───LLMNR_Web_Server
+│   │   │   ├───ESP8266mDNS
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───LEAmDNS
+│   │   │   │   │   │   ├───mDNS_Clock
+│   │   │   │   │   │   └───mDNS_ServiceMonitor
+│   │   │   │   │   ├───mDNS-SD_Extended
+│   │   │   │   │   ├───mDNS_Web_Server
+│   │   │   │   │   └───OTA-mDNS-LittleFS
+│   │   │   │   │       └───data
+│   │   │   │   └───src
+│   │   │   ├───ESP8266NetBIOS
+│   │   │   │   └───examples
+│   │   │   │       └───ESP_NBNST
+│   │   │   ├───ESP8266SdFat
+│   │   │   ├───ESP8266SSDP
+│   │   │   │   └───examples
+│   │   │   │       └───SSDP
+│   │   │   ├───ESP8266WebServer
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───AdvancedWebServer
+│   │   │   │   │   ├───FSBrowser
+│   │   │   │   │   │   ├───data
+│   │   │   │   │   │   │   └───edit
+│   │   │   │   │   │   └───extras
+│   │   │   │   │   ├───Graph
+│   │   │   │   │   │   └───data
+│   │   │   │   │   ├───HelloServer
+│   │   │   │   │   ├───HelloServerBearSSL
+│   │   │   │   │   ├───HttpAdvancedAuth
+│   │   │   │   │   ├───HttpBasicAuth
+│   │   │   │   │   ├───HttpHashCredAuth
+│   │   │   │   │   ├───PathArgServer
+│   │   │   │   │   ├───PostServer
+│   │   │   │   │   ├───ServerSentEvents
+│   │   │   │   │   ├───SimpleAuthentication
+│   │   │   │   │   ├───WebServer
+│   │   │   │   │   │   └───data
+│   │   │   │   │   └───WebUpdate
+│   │   │   │   └───src
+│   │   │   │       ├───detail
+│   │   │   │       └───uri
+│   │   │   ├───ESP8266WiFi
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───BearSSL_CertStore
+│   │   │   │   │   ├───BearSSL_MaxFragmentLength
+│   │   │   │   │   ├───BearSSL_Server
+│   │   │   │   │   ├───BearSSL_ServerClientCert
+│   │   │   │   │   ├───BearSSL_Sessions
+│   │   │   │   │   ├───BearSSL_Validation
+│   │   │   │   │   ├───HTTPSRequest
+│   │   │   │   │   ├───IPv6
+│   │   │   │   │   ├───NTPClient
+│   │   │   │   │   ├───PagerServer
+│   │   │   │   │   ├───RangeExtender-NAPT
+│   │   │   │   │   ├───StaticLease
+│   │   │   │   │   ├───Udp
+│   │   │   │   │   ├───WiFiAccessPoint
+│   │   │   │   │   ├───WiFiClient
+│   │   │   │   │   ├───WiFiClientBasic
+│   │   │   │   │   ├───WiFiEcho
+│   │   │   │   │   ├───WiFiEvents
+│   │   │   │   │   ├───WiFiManualWebServer
+│   │   │   │   │   ├───WiFiMulti
+│   │   │   │   │   ├───WiFiScan
+│   │   │   │   │   ├───WiFiShutdown
+│   │   │   │   │   └───WiFiTelnetToSerial
+│   │   │   │   └───src
+│   │   │   │       └───include
+│   │   │   ├───ESP8266WiFiMesh
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───HelloEspnow
+│   │   │   │   │   ├───HelloMesh
+│   │   │   │   │   └───HelloTcpIp
+│   │   │   │   └───src
+│   │   │   ├───Ethernet
+│   │   │   ├───GDBStub
+│   │   │   │   ├───examples
+│   │   │   │   │   └───gdbstub_example
+│   │   │   │   └───src
+│   │   │   │       ├───internal
+│   │   │   │       └───xtensa
+│   │   │   │           └───config
+│   │   │   ├───Hash
+│   │   │   │   ├───examples
+│   │   │   │   │   └───sha1
+│   │   │   │   └───src
+│   │   │   ├───I2S
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───InputSerialPlotter
+│   │   │   │   │   └───SimpleTone
+│   │   │   │   └───src
+│   │   │   ├───LittleFS
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───LittleFS_Timestamp
+│   │   │   │   │   └───SpeedTest
+│   │   │   │   ├───lib
+│   │   │   │   │   └───littlefs
+│   │   │   │   └───src
+│   │   │   ├───lwIP_enc28j60
+│   │   │   │   └───src
+│   │   │   │       └───utility
+│   │   │   ├───lwIP_PPP
+│   │   │   │   ├───examples
+│   │   │   │   │   └───PPPServer
+│   │   │   │   └───src
+│   │   │   ├───lwIP_w5100
+│   │   │   │   └───src
+│   │   │   │       └───utility
+│   │   │   ├───lwIP_w5500
+│   │   │   │   ├───examples
+│   │   │   │   │   └───TCPClient
+│   │   │   │   └───src
+│   │   │   │       └───utility
+│   │   │   ├───Netdump
+│   │   │   │   ├───examples
+│   │   │   │   │   └───Netdump
+│   │   │   │   └───src
+│   │   │   ├───SD
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───Datalogger
+│   │   │   │   │   ├───DumpFile
+│   │   │   │   │   ├───Files
+│   │   │   │   │   ├───listfiles
+│   │   │   │   │   └───ReadWrite
+│   │   │   │   └───src
+│   │   │   ├───SDFS
+│   │   │   │   └───src
+│   │   │   ├───Servo
+│   │   │   │   ├───examples
+│   │   │   │   │   └───Sweep
+│   │   │   │   └───src
+│   │   │   ├───SoftwareSerial
+│   │   │   ├───SPI
+│   │   │   ├───SPISlave
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───SPISlave_Master
+│   │   │   │   │   ├───SPISlave_SafeMaster
+│   │   │   │   │   └───SPISlave_Test
+│   │   │   │   └───src
+│   │   │   ├───TFT_Touch_Shield_V2
+│   │   │   │   └───examples
+│   │   │   │       ├───drawCircle
+│   │   │   │       ├───drawLines
+│   │   │   │       ├───drawNumber
+│   │   │   │       ├───drawRectangle
+│   │   │   │       ├───paint
+│   │   │   │       ├───shapes
+│   │   │   │       ├───text
+│   │   │   │       ├───tftbmp
+│   │   │   │       └───tftbmp2
+│   │   │   ├───Ticker
+│   │   │   │   ├───examples
+│   │   │   │   │   ├───TickerBasic
+│   │   │   │   │   ├───TickerFunctional
+│   │   │   │   │   └───TickerParameter
+│   │   │   │   └───src
+│   │   │   └───Wire
+│   │   │       └───examples
+│   │   │           ├───master_reader
+│   │   │           ├───master_writer
+│   │   │           ├───slave_receiver
+│   │   │           └───slave_sender
+│   │   ├───package
+│   │   ├───tests
+│   │   │   ├───ci
+│   │   │   ├───device
+│   │   │   │   ├───libraries
+│   │   │   │   │   └───BSTest
+│   │   │   │   │       ├───src
+│   │   │   │   │       └───test
+│   │   │   │   ├───test_BearSSL
+│   │   │   │   ├───test_ClientContext
+│   │   │   │   ├───test_http_server
+│   │   │   │   ├───test_iostream
+│   │   │   │   ├───test_libc
+│   │   │   │   ├───test_millis_mm
+│   │   │   │   ├───test_overrides
+│   │   │   │   ├───test_ping
+│   │   │   │   ├───test_random
+│   │   │   │   ├───test_serial
+│   │   │   │   ├───test_spi_flash
+│   │   │   │   ├───test_stack_in_heap
+│   │   │   │   ├───test_stack_in_sys
+│   │   │   │   ├───test_sw_arduino_math_overrides
+│   │   │   │   ├───test_sw_FS
+│   │   │   │   ├───test_sw_http_client
+│   │   │   │   ├───test_sw_newlib
+│   │   │   │   ├───test_sw_Print_printf
+│   │   │   │   ├───test_sw_schedule
+│   │   │   │   ├───test_sw_StreamString
+│   │   │   │   ├───test_sw_tests
+│   │   │   │   ├───test_sw_WiFiServer
+│   │   │   │   ├───test_time
+│   │   │   │   ├───test_umm_malloc
+│   │   │   │   ├───test_WiFiClient
+│   │   │   │   └───test_WiFi_events
+│   │   │   └───host
+│   │   │       ├───common
+│   │   │       │   ├───include
+│   │   │       │   └───machine
+│   │   │       ├───core
+│   │   │       ├───fs
+│   │   │       └───sys
+│   │   ├───tools
+│   │   │   ├───esptool
+│   │   │   ├───pyserial
+│   │   │   └───sdk
+│   │   │       ├───include
+│   │   │       │   ├───bearssl
+│   │   │       │   └───json
+│   │   │       ├───ld
+│   │   │       ├───lib
+│   │   │       │   ├───compare
+│   │   │       │   ├───NONOSDK221
+│   │   │       │   ├───NONOSDK22x_190313
+│   │   │       │   ├───NONOSDK22x_190703
+│   │   │       │   ├───NONOSDK22x_191024
+│   │   │       │   ├───NONOSDK22x_191105
+│   │   │       │   ├───NONOSDK22x_191122
+│   │   │       │   └───NONOSDK3V0
+│   │   │       ├───lwip2
+│   │   │       │   ├───builder
+│   │   │       │   └───include
+│   │   │       │       ├───arch
+│   │   │       │       ├───lwip
+│   │   │       │       │   ├───apps
+│   │   │       │       │   ├───priv
+│   │   │       │       │   └───prot
+│   │   │       │       └───netif
+│   │   │       │           └───ppp
+│   │   │       ├───ssl
+│   │   │       │   └───bearssl
+│   │   │       └───uzlib
+│   │   └───variants
+│   │       ├───adafruit
+│   │       ├───agruminolemonv4
+│   │       ├───arduino_spi
+│   │       ├───arduino_uart
+│   │       ├───d1
+│   │       ├───d1_mini
+│   │       ├───eduinowifi
+│   │       ├───esp8285
+│   │       ├───ESPDuino
+│   │       ├───espectro
+│   │       ├───espino
+│   │       ├───espinotee
+│   │       ├───espresso_lite_v1
+│   │       ├───espresso_lite_v2
+│   │       ├───generic
+│   │       ├───inventone
+│   │       ├───itead
+│   │       ├───modwifi
+│   │       ├───nodemcu
+│   │       ├───oak
+│   │       ├───phoenix_v1
+│   │       ├───phoenix_v2
+│   │       ├───thing
+│   │       ├───wifiduino
+│   │       ├───wifinfo
+│   │       ├───wifio
+│   │       ├───wifi_kit_8
+│   │       ├───wifi_slot
+│   │       ├───wiolink
+│   │       └───xinabox
+│   ├───ESP8266
+│   │   ├───esp8266
+│   │   │   ├───examples
+│   │   │   │   ├───Blink
+│   │   │   │   ├───BlinkPolledTimeout
+│   │   │   │   ├───BlinkWithoutDelay
+│   │   │   │   ├───CallBackList
+│   │   │   │   ├───CallSDKFunctions
+│   │   │   │   ├───CheckFlashConfig
+│   │   │   │   ├───CheckFlashCRC
+│   │   │   │   ├───ConfigFile
+│   │   │   │   ├───FadePolledTimeout
+│   │   │   │   ├───HeapMetric
+│   │   │   │   ├───HelloCrypto
+│   │   │   │   ├───HwdtStackDump
+│   │   │   │   ├───I2SInput
+│   │   │   │   ├───I2STransmit
+│   │   │   │   ├───interactive
+│   │   │   │   ├───irammem
+│   │   │   │   ├───IramReserve
+│   │   │   │   ├───LowPowerDemo
+│   │   │   │   ├───MMU48K
+│   │   │   │   ├───NTP-TZ-DST
+│   │   │   │   ├───RTCUserMemory
+│   │   │   │   ├───SerialDetectBaudrate
+│   │   │   │   ├───SerialStress
+│   │   │   │   ├───SigmaDeltaDemo
+│   │   │   │   ├───StreamString
+│   │   │   │   ├───TestEspApi
+│   │   │   │   ├───UartDownload
+│   │   │   │   └───virtualmem
+│   │   │   └───src
+│   │   ├───ESP8266V01_COMPIL_Maxime
+│   │   ├───examples
+│   │   │   ├───Blink
+│   │   │   ├───BlinkPolledTimeout
+│   │   │   ├───BlinkWithoutDelay
+│   │   │   ├───CallBackList
+│   │   │   ├───CallSDKFunctions
+│   │   │   ├───CheckFlashConfig
+│   │   │   ├───CheckFlashCRC
+│   │   │   ├───ConfigFile
+│   │   │   ├───FadePolledTimeout
+│   │   │   ├───HeapMetric
+│   │   │   ├───HelloCrypto
+│   │   │   ├───HwdtStackDump
+│   │   │   ├───I2SInput
+│   │   │   ├───I2STransmit
+│   │   │   ├───interactive
+│   │   │   ├───irammem
+│   │   │   ├───IramReserve
+│   │   │   ├───LowPowerDemo
+│   │   │   ├───MMU48K
+│   │   │   ├───NTP-TZ-DST
+│   │   │   ├───RTCUserMemory
+│   │   │   ├───SerialDetectBaudrate
+│   │   │   ├───SerialStress
+│   │   │   ├───SigmaDeltaDemo
+│   │   │   ├───StreamString
+│   │   │   ├───TestEspApi
+│   │   │   ├───UartDownload
+│   │   │   └───virtualmem
+│   │   └───src
+│   └───ESP8266V01_COMPIL_Maxime
+├───RFID-MFRC522-Arduino-Mega-2560
+└───W5100_Network_Simple_RFID-DumpInfo
+
+D:\CODE\Arduino\IOT>
