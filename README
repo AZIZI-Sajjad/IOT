@@ -1,8 +1,10 @@
 DIR TREE  : 
 ********************
-D:\CODE\Arduino\IOT>tree D:\CODE\Arduino\IOT
+D:\CODE\Arduino\IOT>
+D:\CODE\Arduino\IOT>
+D:\CODE\Arduino>tree D:\CODE\Arduino\IOT
 Structure du dossier pour le volume DATA
-Le numéro de série du volume est 00000093 804E:60AB
+Le numéro de série du volume est 000000B7 804E:60AB
 D:\CODE\ARDUINO\IOT
 ├───Arduino
 │   └───Baics
@@ -122,7 +124,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │   ├───ESP8266NetBIOS
 │   │   │   │   └───examples
 │   │   │   │       └───ESP_NBNST
-│   │   │   ├───ESP8266SdFat
 │   │   │   ├───ESP8266SSDP
 │   │   │   │   └───examples
 │   │   │   │       └───SSDP
@@ -183,7 +184,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │   │   │   ├───HelloMesh
 │   │   │   │   │   └───HelloTcpIp
 │   │   │   │   └───src
-│   │   │   ├───Ethernet
 │   │   │   ├───GDBStub
 │   │   │   │   ├───examples
 │   │   │   │   │   └───gdbstub_example
@@ -204,8 +204,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │   │   ├───examples
 │   │   │   │   │   ├───LittleFS_Timestamp
 │   │   │   │   │   └───SpeedTest
-│   │   │   │   ├───lib
-│   │   │   │   │   └───littlefs
 │   │   │   │   └───src
 │   │   │   ├───lwIP_enc28j60
 │   │   │   │   └───src
@@ -240,7 +238,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │   │   ├───examples
 │   │   │   │   │   └───Sweep
 │   │   │   │   └───src
-│   │   │   ├───SoftwareSerial
 │   │   │   ├───SPI
 │   │   │   ├───SPISlave
 │   │   │   │   ├───examples
@@ -313,8 +310,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │       ├───fs
 │   │   │       └───sys
 │   │   ├───tools
-│   │   │   ├───esptool
-│   │   │   ├───pyserial
 │   │   │   └───sdk
 │   │   │       ├───include
 │   │   │       │   ├───bearssl
@@ -330,7 +325,6 @@ D:\CODE\ARDUINO\IOT
 │   │   │       │   ├───NONOSDK22x_191122
 │   │   │       │   └───NONOSDK3V0
 │   │   │       ├───lwip2
-│   │   │       │   ├───builder
 │   │   │       │   └───include
 │   │   │       │       ├───arch
 │   │   │       │       ├───lwip
@@ -339,9 +333,7 @@ D:\CODE\ARDUINO\IOT
 │   │   │       │       │   └───prot
 │   │   │       │       └───netif
 │   │   │       │           └───ppp
-│   │   │       ├───ssl
-│   │   │       │   └───bearssl
-│   │   │       └───uzlib
+│   │   │       └───ssl
 │   │   └───variants
 │   │       ├───adafruit
 │   │       ├───agruminolemonv4
