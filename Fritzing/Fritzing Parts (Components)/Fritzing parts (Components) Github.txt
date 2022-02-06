@@ -1,0 +1,6 @@
+Fritzing parts (Components) Github
+
+https://github.com/adafruit/Fritzing-Library/tree/master/parts
+
+
+http://omnigatherum.ca/wp/?p=262
