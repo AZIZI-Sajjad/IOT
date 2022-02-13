@@ -27,17 +27,18 @@ https://drive.google.com/file/d/1an4w8Vw_gqgMoH3tqq1G2wBHDadnrq2W/view
 
 
 Fait :
-  Base de données sur la MV ElasTix 192.168.3.200 + Apache2
-  les fichers de confif en php préparés et envoyés sur le serveur
-    /var/www/html/NodeMCU_Get_Database
-    Également sauvegardé sur le PC dans le dossier  :
+  * Base de données sur la MV ElasTix 192.168.3.200 + Apache2
+  * les fichers de confif en php préparés et envoyés sur le serveur
+      /var/www/html/NodeMCU_Get_Database
+        Également sauvegardé sur le PC dans le dossier  :
 
-  Base de donénes et la table créés sur phpmyadmin
-  http://192.168.3.200/phpmyadmin
-  Page Web fonctionne ok
-  http://192.168.3.200/NodeMCU_Get_Database/Main.php
-  En appuyant sur les buttons de la pager Web re record "Stat" de la table de la base de donénes chnage ok
+  * Base de donénes et la table créés sur phpmyadmin
+      http://192.168.3.200/phpmyadmin
+  * Page Web fonctionne ok
+      http://192.168.3.200/NodeMCU_Get_Database/Main.php
+      En appuyant sur les buttons de la pager Web re record "Stat" de la table de la base de donénes chnage ok
   Erreur de la "Lign 74" corrigé ok
+    Ref : https://giters.com/panbachi/wordclock/issues/22
 
 À Faire :
     /!\ Résoudre le problème de compatibilité du code avec le module !!!!!!!!!!!!!!!!!!!!!!

@@ -37,7 +37,7 @@ void loop()
   float temperature = dht.getTemperature();
 
   // <SD> : If Temperatuer > 20 so Turn ON LED
-  if (temperature > 20) {
+  if (temperature >= 27) {
     digitalWrite(LedPin, HIGH);
   }
   else {
