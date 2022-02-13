@@ -1,2 +1,3 @@
 LED Pin : D7
 DHT11 Pin : D5 
+  /!\ DHT11 VCC -> 3V
