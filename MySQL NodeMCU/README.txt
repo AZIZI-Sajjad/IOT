@@ -45,3 +45,12 @@ Fait :
 
 
 https://www.youtube.com/watch?v=J9ziYzmiW9I
+
+
+13/02/2022 :
+              /!\ Résoudre le problème de compatibilité du code avec le module
+              Absolute error resolved
+.
+À Faire :
+        Résoudre le problème du code de retour "-1" de HTTPClient
+.
