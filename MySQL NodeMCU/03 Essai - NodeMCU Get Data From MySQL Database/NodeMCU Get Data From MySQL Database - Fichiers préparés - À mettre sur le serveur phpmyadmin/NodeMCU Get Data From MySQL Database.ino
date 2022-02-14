@@ -71,8 +71,8 @@ void loop() {
   Serial.println("----------------Connect to Server-----------------");
   Serial.println("Get LED Status from Server or Database");
   Serial.print("Request Link : ");
-  Serial.println(client,LinkGet); //--> Modified By @AZIZI-Sajjad: for an error "expected "primary-expression before ',' token" / it must add line 63
-  http.begin(LinkGet); //--> Specify request destination
+  Serial.println(LinkGet); 
+  http.begin(client,LinkGet); //--> Specify request destination //--> Modified By @AZIZI-Sajjad: for an error "expected "primary-expression before ',' token" / it must add line 63
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");    //Specify content-type header
   int httpCodeGet = http.POST(getData); //--> Send the request
   String payloadGet = http.getString(); //--> Get the response payload from server
