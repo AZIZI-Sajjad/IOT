@@ -91,8 +91,8 @@
 #define ON_Board_LED 2  //--> Defining an On Board LED (GPIO2 = D4), used for indicators when the process of connecting to a wifi router
 #define LED_D8 15 //--> Defines an LED Pin. D8 = GPIO15
 //----------------------------------------SSID and Password of your WiFi router.
-const char* ssid = "Arduino"; //--> Your wifi name or SSID.
-const char* password = "P@ssw0rd"; //--> Your wifi password.
+const char* ssid = "SSID"; //--> Your wifi name or SSID.
+const char* password = "PASSWORD"; //--> Your wifi password.
 //----------------------------------------
 
 
