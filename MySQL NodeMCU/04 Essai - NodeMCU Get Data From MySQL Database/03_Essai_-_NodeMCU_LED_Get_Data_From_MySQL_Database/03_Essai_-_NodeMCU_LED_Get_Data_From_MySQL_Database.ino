@@ -150,7 +150,15 @@ void setup() {
   //--> <SD> LED
   pinMode(LED_BUILTIN, OUTPUT);
   //--> </SD> LED 
+}
 
+void loop() {
+  //--> <SD> LED
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  //--> <SD> LED
+
+ //--------------------------------------------------------------------------
   // connect to web server on port 80:
   if(client.connect(HOST_NAME, HTTP_PORT)) {
     // if connected:
@@ -177,12 +185,7 @@ void setup() {
   } else {// if not connected:
     Serial.println("connection failed");
   }
-}
 
-void loop() {
-  //--> <SD> LED
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  //--> <SD> LED
-    
+
+  
 }
