@@ -91,8 +91,8 @@
 #define ON_Board_LED 2  //--> Defining an On Board LED (GPIO2 = D4), used for indicators when the process of connecting to a wifi router
 #define LED_D8 15 //--> Defines an LED Pin. D8 = GPIO15
 //----------------------------------------SSID and Password of your WiFi router.
-const char* ssid = "SSID"; //--> Your wifi name or SSID.
-const char* password = "PASSWORD"; //--> Your wifi password.
+const char* ssid = "M0!"; //--> Your wifi name or SSID.
+const char* password = "%$P@ssw0rdHuawei"; //--> Your wifi password.
 //----------------------------------------
 
 
@@ -101,11 +101,11 @@ const char* password = "PASSWORD"; //--> Your wifi password.
 
 WiFiClient client;
 
-int    HTTP_PORT   = 80;
+int    HTTP_PORT   = 31306;
 String HTTP_METHOD = "GET";
-char   HOST_NAME[] = "192.168.4.111"; // change to your PC's IP address
+char   HOST_NAME[] = "176.175.148.24"; // change to your PC's IP address
 String PATH_NAME   = "/insert_temp.php";
-String queryString = "?temperature=69.2";
+String queryString = "?temperature=28.5";
 
 void setup() {
   Serial.begin(9600);
