@@ -17,6 +17,7 @@ https://blynk.io/
 4- Se conecter sur l'application avec son compte, Lorsqu'on se connecte :
 ###### * 4.1 : Créer un nouveau projet
 ###### * 4.2 : Après avoir créé le projet on reçoit un TOKEN d'authentification par mail 
+https://tutorial.cytron.io/2021/09/01/how-to-start-up-and-get-auth-token-from-blynk/
 
 5- Créer son con code contenant : 
 ###### * le TOKEN d'authentification 
