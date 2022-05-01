@@ -37,12 +37,12 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "zXYZ0lNMyOhljSh4DY0uEFkismftceyR";
+char auth[] = "TOKEN Blynk";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Arduino";
-char pass[] = "P@ssw0rd";
+char ssid[] = "SSID";
+char pass[] = "WiFi password";
 
 WidgetLCD lcd(V1);
 
