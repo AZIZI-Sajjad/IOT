@@ -73,8 +73,9 @@ Sim800L GSM(RX, TX);
  */
 
 void setup(){
-  Serial.begin(9600); 
-  GSM.begin(4800);     
+  Serial.begin(9600);
+  GSM.begin(9600);
+  GSM.println("AT+CPIN=\1234\r");    
 
   Serial.println("GET PRODUCT INFO: ");
   Serial.println(GSM.getProductInfo());
