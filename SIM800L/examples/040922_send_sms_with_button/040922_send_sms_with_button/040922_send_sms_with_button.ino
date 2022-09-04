@@ -7,7 +7,7 @@
  */
 #include <SoftwareSerial.h>
 
-SoftwareSerial sim800l(2, 3); // RX,TX for Arduino and for the module it's TXD RXD, they should be inverted
+SoftwareSerial sim800l(10, 11); // RX,TX for Arduino and for the module it's TXD RXD, they should be inverted
 
 #define button1 7 //Button pin, on the other pin it's wired with GND
 
@@ -18,7 +18,7 @@ void setup()
 {
  
   pinMode(button1, INPUT_PULLUP); //The button is always on HIGH level, when pressed it goes LOW
-  sim800l.begin(9600);   //Module baude rate, this is on max, it depends on the version
+  sim800l.begin(4800);   //Module baude rate, this is on max, it depends on the version - Default: 9600
   Serial.begin(9600);
   Serial.print("AT+CPIN=\1234\r");
   delay(1000);
