@@ -60,30 +60,49 @@
 #include <Sim800L.h>
 #include <SoftwareSerial.h>               
 
-#define RX  10
-#define TX  11
+#define RX  11
+#define TX  10
+
 
 Sim800L GSM(RX, TX);
 
 /*
  * In alternative:
  * Sim800L GSM;                       // Use default pinout
+ Serial.println("2/////////////");
  * Sim800L GSM(RX, TX, RESET);        
+ Serial.println("3/////////////");
  * Sim800L GSM(RX, TX, RESET, LED);
  */
 
 void setup(){
+Serial.println("4/////////////");
   Serial.begin(9600);
+  Serial.println("5/////////////");
   GSM.begin(9600);
-  GSM.println("AT+CPIN=\1234\r");    
+  Serial.println("6/////////////");
+  //GSM.println("AT+CPIN=\1234\r");    
+  
+  String pin = "0802";
 
+  Serial.println("7/////////////");
+  if (GSM.setPIN(pin)) Serial.println("Pin set");
+    Serial.println("8/////////////");
+  else Serial.println('Pin NOT set');
+
+  Serial.println("9/////////////");
   Serial.println("GET PRODUCT INFO: ");
+  Serial.println("10/////////////");
   Serial.println(GSM.getProductInfo());
 
+Serial.println("11/////////////");
   Serial.println("GET OPERATORS LIST: ");
+  Serial.println("12/////////////");
   Serial.println(GSM.getOperatorsList());
 
+Serial.println("13/////////////");
   Serial.println("GET OPERATOR: ");
+  Serial.println("14/////////////");
   Serial.println(GSM.getOperator());
   
 }
